@@ -14,8 +14,11 @@ function clickSubmit(event) {
          password: password,
         }
 
-  if (email === " " || password === " "){
-    alert = "Всі поля повинні бути заповнені";} 
-    console.log(formConsole)
-    form.reset()
+  if (email === "" || password === ""){
+    alert("Всі поля повинні бути заповнені");
+    return;
+  } else {
+    console.log(formConsole);
+    form.reset();
+  }
 }

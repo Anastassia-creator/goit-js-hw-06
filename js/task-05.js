@@ -4,5 +4,7 @@ const text = document.querySelector('#name-output');
 field.addEventListener('input', onInputChange)
 
 function onInputChange(event) {
-    text.textContent = event.currentTarget.value;
+    const fieldValue = event.currentTarget.value;
+
+    text.textContent = fieldValue === "" ? "Anonymous" : fieldValue;
 }
